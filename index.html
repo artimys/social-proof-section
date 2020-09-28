@@ -15,11 +15,12 @@
 
     <title>Frontend Mentor | Social proof section</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- Feel free to remove these styles or customise in your own stylesheet👍 -->
     <style>
       .attribution {
         font-size: 11px;
         text-align: center;
+        padding: 25px;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -30,106 +31,95 @@
 
     <main>
 
-        <div class="intro">
-          <h1>10,000+ of our users love our products.</h1>
-          <p>We only provide great products combined with excellent customer service.
-          See what our satisfied customers are saying about our services.</p>
+      <section class="intro-wrap">
+        <h1>10,000+ of our users love our products.</h1>
+        <p>We only provide great products combined with excellent customer service.
+        See what our satisfied customers are saying about our services.</p>
+      </section>
+
+      <section class="ratings-wrap">
+        <div class="rating rating-a">
+          <div class="stars">
+            <img alt="Rating Star" src="images/icon-star.svg" />
+            <img alt="Rating Star" src="images/icon-star.svg" />
+            <img alt="Rating Star" src="images/icon-star.svg" />
+            <img alt="Rating Star" src="images/icon-star.svg" />
+            <img alt="Rating Star" src="images/icon-star.svg" />
+          </div>
+          <p>Rated 5 Stars in Reviews</p>
         </div>
 
-        <div class="ratings-group">
-          <div class="rating">
-            <div class="stars">
-              <img alt="" src="images/icon-star.svg" />
-              <img alt="" src="images/icon-star.svg" />
-              <img alt="" src="images/icon-star.svg" />
-              <img alt="" src="images/icon-star.svg" />
-              <img alt="" src="images/icon-star.svg" />
-            </div>
-            <div>
-              Rated 5 Stars in Reviews
-            </div>
+        <div class="rating rating-b">
+          <div class="stars">
+            <img alt="Rating Star" src="images/icon-star.svg" />
+            <img alt="Rating Star" src="images/icon-star.svg" />
+            <img alt="Rating Star" src="images/icon-star.svg" />
+            <img alt="Rating Star" src="images/icon-star.svg" />
+            <img alt="Rating Star" src="images/icon-star.svg" />
           </div>
-
-          <div class="rating">
-            <div class='stars'>
-              <img alt="" src="images/icon-star.svg" />
-              <img alt="" src="images/icon-star.svg" />
-              <img alt="" src="images/icon-star.svg" />
-              <img alt="" src="images/icon-star.svg" />
-              <img alt="" src="images/icon-star.svg" />
-            </div>
-            <div>
-              Rated 5 Stars in Report Guru
-            </div>
-          </div>
-
-          <div class="rating">
-            <div class="stars">
-              <img alt="" src="images/icon-star.svg" />
-              <img alt="" src="images/icon-star.svg" />
-              <img alt="" src="images/icon-star.svg" />
-              <img alt="" src="images/icon-star.svg" />
-              <img alt="" src="images/icon-star.svg" />
-            </div>
-            <div>
-              Rated 5 Stars in BestTech
-            </div>
-          </div>
+          <p>Rated 5 Stars in Report Guru</p>
         </div>
 
-
-        <div class="reviews-group">
-
-          <div class="review">
-            <div>
-              <span class="buyer-name">Colton Smith</span>
-              <span class="buyer-verified">Verified Buyer</span>
-            </div>
-            <blockquote>
-            "We needed the same printed design as the one we had ordered a week prior.
-            Not only did they find the original order, but we also received it in time.
-            Excellent!"
-            </blockquote>
+        <div class="rating rating-c">
+          <div class="stars">
+            <img alt="Rating Star" src="images/icon-star.svg" />
+            <img alt="Rating Star" src="images/icon-star.svg" />
+            <img alt="Rating Star" src="images/icon-star.svg" />
+            <img alt="Rating Star" src="images/icon-star.svg" />
+            <img alt="Rating Star" src="images/icon-star.svg" />
           </div>
-
-          <div class="review">
-            <div>
-              <span class="buyer-name">Irene Roberts</span>
-              <span class="buyer-verified">Verified Buyer</span>
-            </div>
-            <blockquote>
-            "Customer service is always excellent and very quick turn around. Completely
-            delighted with the simplicity of the purchase and the speed of delivery."
-            </blockquote>
-          </div>
-
-          <div class="review">
-            <div>
-              Anne Wallace
-              Verified Buyer
-            </div>
-            <blockquote>
-            "Put an order with this company and can only praise them for the very high
-            standard. Will definitely use them again and recommend them to everyone!"
-            </blockquote>
-          </div>
-
+          <p>Rated 5 Stars in BestTech</p>
         </div>
+      </section>
+
+
+      <section class="reviews-wrap">
+        <div class="review review-a">
+          <div>
+            <img class="buyer-pic" src="images/image-colton.jpg" alt="Colton Smith" />
+            <span class="buyer-name">Colton Smith</span>
+            <span class="buyer-verified">Verified Buyer</span>
+          </div>
+          <blockquote>
+          "We needed the same printed design as the one we had ordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent!"
+          </blockquote>
+        </div>
+
+        <div class="review review-b">
+          <div>
+            <img class="buyer-pic" src="images/image-irene.jpg" alt="Irene Roberts" />
+            <span class="buyer-name">Irene Roberts</span>
+            <span class="buyer-verified">Verified Buyer</span>
+          </div>
+          <blockquote>
+          "Customer service is always excellent and very quick turn around. Completely
+          delighted with the simplicity of the purchase and the speed of delivery."
+          </blockquote>
+        </div>
+
+        <div class="review review-c">
+          <div>
+            <img class="buyer-pic" src="images/image-anne.jpg" alt="Anne Wallace" />
+            <span class="buyer-name">Anne Wallace</span>
+            <span class="buyer-verified">Verified Buyer</span>
+          </div>
+          <blockquote>
+          "Put an order with this company and can only praise them for the very high
+          standard. Will definitely use them again and recommend them to everyone!"
+          </blockquote>
+        </div>
+      </section>
 
     </main>
 
 
-
-
-
-
-
-
-    <!-- <div class="attribution">
+    <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Art Simon</a>.
-    </div> -->
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Arty Simon</a>.
+    </div>
+
   </body>
 </html>
