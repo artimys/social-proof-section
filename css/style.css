@@ -30,7 +30,7 @@ main .intro-wrap {
 main .intro-wrap h1 {
   color: #502050;
   line-height: 34px;
-  font-size: 2rem;
+  font-size: rem;
 }
 
 main .intro-wrap p {
@@ -139,9 +139,9 @@ main .reviews-wrap .review blockquote {
   }
   main .intro-wrap h1 {
     max-width: 400px;
-    font-size: 3rem;
+    font-size: 2.9rem;
     line-height: 47px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   main .intro-wrap p {
     margin: 0;
@@ -162,23 +162,20 @@ main .reviews-wrap .review blockquote {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-column-gap: 2em;
-            column-gap: 2em;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    min-height: 275px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  main .reviews-wrap .review-a {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+  main .reviews-wrap .review {
+    width: 32%;
+  }
+  main .reviews-wrap .review-b {
+    -webkit-transform: translateY(1.2rem);
+            transform: translateY(1.2rem);
   }
   main .reviews-wrap .review-c {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    -webkit-transform: translateY(2.4rem);
+            transform: translateY(2.4rem);
   }
 }
 
@@ -198,9 +195,6 @@ main .reviews-wrap .review blockquote {
   main .ratings-wrap .rating {
     max-width: 500px;
     text-align: left;
-    padding-top: 1.9em;
-    padding-bottom: 4em;
-    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -213,7 +207,7 @@ main .reviews-wrap .review blockquote {
   }
   main .ratings-wrap .rating .stars {
     margin-left: 1.4em;
-    margin-right: 1.4em;
+    margin-right: 2em;
     padding: 0;
   }
   main .ratings-wrap .rating-a {

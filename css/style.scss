@@ -12,7 +12,6 @@ $white: hsl(0, 0%, 100%);
     margin: 0;
     padding: 0;
 }
-// section, h1, p, blockquote { margin: 0; padding: 0; }
 
 body {
     background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
@@ -34,7 +33,7 @@ main {
         h1 {
             color: $very-dark-magenta;
             line-height: 34px;
-            font-size: 2rem;
+            font-size: rem;
         }
         p {
             margin-top: 22px;
@@ -130,9 +129,9 @@ main {
 
             h1 {
                 max-width: 400px;
-                font-size: 3rem;
+                font-size: 2.9rem;
                 line-height: 47px;
-                margin-bottom: 20px;
+                margin-bottom: 15px;
             }
             p { margin: 0; }
         }
@@ -147,17 +146,16 @@ main {
             grid-column: 1 / -1;
             grid-row: 2;
 
-            // Spread .review divs to a single row
+            .review {
+                width: 32%;
+            }
+            // Spread .review divs to a single row, //display:flex set from mobile
             flex-direction: row;
-            column-gap: 2em;
+            justify-content: space-between;
 
             // Stagger the .reviews-wrap children (.review)
-            // display: flex; // Already set to flex from mobile
-            align-items: center;
-            justify-content: center;
-            min-height: 275px;
-            .review-a { align-self: flex-start; }
-            .review-c { align-self: flex-end; }
+            .review-b { transform: translateY(1.2rem); }
+            .review-c { transform: translateY(2.4rem); }
         }
     }
 
@@ -172,14 +170,10 @@ main {
                 max-width: 500px;
                 text-align: left;
 
-                padding-top: 1.9em;
-                padding-bottom: 4em;
-                padding: 0;
-
                 .stars, p { display: inline-block; }
                 .stars {
                     margin-left: 1.4em;
-                    margin-right: 1.4em;
+                    margin-right: 2em;
 
                     // Reset mobile spacing
                     padding: 0;
