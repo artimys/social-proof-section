@@ -7,11 +7,6 @@
   padding: 0;
 }
 
-section, h1, p, blockquote {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
   background-position: top right, bottom right;
@@ -64,7 +59,7 @@ main .ratings-wrap .rating {
   color: #502050;
   font-weight: 700;
   border-radius: 10px;
-  padding: 15px;
+  padding: 1.1em;
   text-align: center;
 }
 
@@ -74,7 +69,7 @@ main .ratings-wrap .rating .stars {
 }
 
 main .ratings-wrap .rating p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 main .reviews-wrap {
@@ -94,7 +89,7 @@ main .reviews-wrap .review {
   color: white;
   font-size: 0.8rem;
   line-height: 20px;
-  padding: 40px 30px 30px 30px;
+  padding: 3em 2.9em 3em 2.9em;
 }
 
 main .reviews-wrap .review .buyer-pic {
@@ -126,7 +121,7 @@ main .reviews-wrap .review blockquote {
     background-repeat: no-repeat, no-repeat;
   }
   main {
-    margin: 145px 160px 50px;
+    margin: 4em 4em 2em;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[12];
@@ -144,9 +139,9 @@ main .reviews-wrap .review blockquote {
   }
   main .intro-wrap h1 {
     max-width: 400px;
-    font-size: 2.5rem;
-    line-height: 40px;
-    margin-bottom: 15px;
+    font-size: 3rem;
+    line-height: 47px;
+    margin-bottom: 20px;
   }
   main .intro-wrap p {
     margin: 0;
@@ -167,8 +162,8 @@ main .reviews-wrap .review blockquote {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-column-gap: 30px;
-            column-gap: 30px;
+    -webkit-column-gap: 2em;
+            column-gap: 2em;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -188,6 +183,9 @@ main .reviews-wrap .review blockquote {
 }
 
 @media only screen and (min-width: 1100px) {
+  main {
+    margin: 130px 160px 50px;
+  }
   main .ratings-wrap {
     display: -ms-grid;
     display: grid;
@@ -195,10 +193,14 @@ main .reviews-wrap .review blockquote {
         grid-template-columns: repeat(12, 1fr);
     -ms-grid-rows: (50px)[3];
         grid-template-rows: repeat(3, 50px);
+    row-gap: 25px;
   }
   main .ratings-wrap .rating {
     max-width: 500px;
     text-align: left;
+    padding-top: 1.9em;
+    padding-bottom: 4em;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -210,10 +212,9 @@ main .reviews-wrap .review blockquote {
     display: inline-block;
   }
   main .ratings-wrap .rating .stars {
-    margin-left: 20px;
-    margin-right: 30px;
-    padding-top: 6px;
-    padding-bottom: 4px;
+    margin-left: 1.4em;
+    margin-right: 1.4em;
+    padding: 0;
   }
   main .ratings-wrap .rating-a {
     -ms-grid-column: 1;

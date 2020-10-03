@@ -12,7 +12,7 @@ $white: hsl(0, 0%, 100%);
     margin: 0;
     padding: 0;
 }
-section, h1, p, blockquote { margin: 0; padding: 0; }
+// section, h1, p, blockquote { margin: 0; padding: 0; }
 
 body {
     background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
@@ -58,7 +58,7 @@ main {
             color: $very-dark-magenta;
             font-weight: 700;
             border-radius: 10px;
-            padding: 15px;
+            padding: 1.1em;
             text-align: center;
 
             .stars {
@@ -66,7 +66,7 @@ main {
                 padding-bottom: 10px;
             }
 
-            p { font-size: 0.8rem; }
+            p { font-size: 0.9rem; }
         }
     }
 
@@ -81,7 +81,7 @@ main {
             color: $white;
             font-size: 0.8rem;
             line-height: 20px;
-            padding: 40px 30px 30px 30px;
+            padding: 3em 2.9em 3em 2.9em;
             .buyer-pic {
                 float: left;
                 width: 40px;
@@ -115,7 +115,7 @@ main {
     }
 
     main {
-        margin: 145px 160px 50px; // Replace mobile spacing
+        margin: 4em 4em 2em; // Replace mobile spacing
 
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -130,9 +130,9 @@ main {
 
             h1 {
                 max-width: 400px;
-                font-size: 2.5rem;
-                line-height: 40px;
-                margin-bottom: 15px;
+                font-size: 3rem;
+                line-height: 47px;
+                margin-bottom: 20px;
             }
             p { margin: 0; }
         }
@@ -149,7 +149,7 @@ main {
 
             // Spread .review divs to a single row
             flex-direction: row;
-            column-gap: 30px;
+            column-gap: 2em;
 
             // Stagger the .reviews-wrap children (.review)
             // display: flex; // Already set to flex from mobile
@@ -165,22 +165,27 @@ main {
 
 @media only screen and (min-width: 1100px) {
     main {
+        margin: 130px 160px 50px; // Replace mobile spacing
+
         .ratings-wrap {
             .rating {
                 max-width: 500px;
                 text-align: left;
 
+                padding-top: 1.9em;
+                padding-bottom: 4em;
+                padding: 0;
+
                 .stars, p { display: inline-block; }
                 .stars {
-                    margin-left: 20px;
-                    margin-right: 30px;
+                    margin-left: 1.4em;
+                    margin-right: 1.4em;
 
                     // Reset mobile spacing
-                    padding-top: 6px;
-                    padding-bottom: 4px;
+                    padding: 0;
                 }
 
-                // Set stars and text vertically centered
+                // Set stars and ext vertically centered
                 display: flex;
                 align-items: center;
             }
@@ -189,6 +194,7 @@ main {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             grid-template-rows: repeat(3, 50px);
+            row-gap: 25px;
             .rating-a { grid-column: 1 / 11; grid-row: 1; }
             .rating-b { grid-column: 2 / 12; grid-row: 2; }
             .rating-c { grid-column: 3 / -1; grid-row: 3; }
